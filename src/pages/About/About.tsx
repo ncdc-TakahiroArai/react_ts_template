@@ -1,5 +1,5 @@
 import React from "react";
-import Button from"@Components/Button"
+import style from "@emotion/styled"
 
 
 export enum PositionX {
@@ -22,20 +22,9 @@ console.log(position)
 
   return (
     <>
-      <h2>fdfafsfsfds</h2>
-      <h2>fdfafsfsfds</h2>
-      <h2>fdfafsfsfds</h2>
-      <h2>fdfafsfsfds</h2>
-      <h2>fdfafsfsfds</h2>
-      <Button
-
-
-
-       type="red"
-       text="未完了に戻す"
-       style={{ width: "124px", height: "38px", marginRight: "5px" }}
-       />
+     aaa
     </>
   );
 };
+
 

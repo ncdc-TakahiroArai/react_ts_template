@@ -3,10 +3,31 @@
   box-sizing: border-box;
 }
 
+html {
+  line-height: 1.5;
+  font-size: 62.5%;
+}
+
+/* ///////////////////////
+fontFamilyの設定
+/////////////////////// */
+
+body {
+  background: #fff;
+  color: #333;
+  font-size: 1.6rem;
+  font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo,
+    sans-serif;
+}
+
 body {
   padding: 0;
   margin: 0;
 }
+
+/* ///////////////////////
+fontの各種margin/paddingの設定
+/////////////////////// */
 
 h1,
 h2,
@@ -19,7 +40,10 @@ p {
   line-height: 1;
 }
 
-ul {
+ul,
+ol {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -34,32 +58,23 @@ img {
   max-width: 100%;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background: #fff;
-  color: #333;
-  font-size: 1.6rem;
-  font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo,
-    sans-serif;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 input,
 button,
-select,
-textarea {
-  appearance: none;
-  background: transparent;
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  background: none;
   border: none;
   border-radius: 0;
-  font: inherit;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 textarea {

@@ -3,26 +3,20 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "prettier",
-    "prettier/react",
+    "plugin:prettier/recommended",
     "prettier/@typescript-eslint"
   ],
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "env": {
     "node": true,
-    "es6": true,
-    "browser": true
+    "es6": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }},
-  "rules": { "no-undef": "error"}
-  // 未定義の変数を使っていないかチェックしてくれる
+  "rules": {}
 }

@@ -13,7 +13,6 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
-    // ここがわからない
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: `${__dirname}/src/index.html`,
@@ -62,6 +61,8 @@ module.exports = {
       "@Components": `${__dirname}/src/components`,
       "@Images": `${__dirname}/src/images`,
       "@Constants": `${__dirname}/src/constants`,
+      "@Utils": `${__dirname}/src/utils`,
+      "@Theme": `${__dirname}/src/theme`,
     },
     extensions: [".ts", ".tsx", ".js", ".json"],
   },
