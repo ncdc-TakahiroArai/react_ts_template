@@ -19,7 +19,6 @@ const Home = (): JSX.Element => {
   useEffect(() => {
     setDataValue("300");
   }, []);
-
   const handleChange = () => {
     if (isSwitch) {
       setSwitch(false);
